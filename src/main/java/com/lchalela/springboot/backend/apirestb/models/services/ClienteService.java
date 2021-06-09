@@ -6,6 +6,7 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 
 import com.lchalela.springboot.backend.apirestb.models.entity.Cliente;
+import com.lchalela.springboot.backend.apirestb.models.entity.Region;
 
 
 public interface ClienteService {
@@ -21,4 +22,5 @@ public interface ClienteService {
 	
 	public void delete(Long id);
 
+	public List<Region> findAllRegiones();
 }
